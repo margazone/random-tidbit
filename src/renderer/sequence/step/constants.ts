@@ -1,0 +1,1 @@
+export const MINIMUM_REPETITION_GAP_DIVISOR = 2;

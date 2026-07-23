@@ -1,0 +1,52 @@
+{
+  "name": "random-tidbit",
+  "version": "0.1.0",
+  "description": "A tiny browser renderer for shuffled bits of text without repeats.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "node --test test/*.test.js test/renderer/*.test.js",
+    "prebuild": "node scripts/clean.mjs",
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm test"
+  },
+  "keywords": [
+    "tidbits",
+    "tidbit-widget",
+    "tidbit-renderer",
+    "website",
+    "frontend",
+    "random-tidbit",
+    "quotes",
+    "typescript"
+  ],
+  "author": "Igor Margasinski",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/margazone/random-tidbit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/margazone/random-tidbit/issues"
+  },
+  "homepage": "https://github.com/margazone/random-tidbit#readme",
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  },
+  "packageManager": "pnpm@11.5.2+sha512.71c631e382066efc25625d5cf029075de07b61b37f6e27350fbd84b1bda5864c8c1967adc280776b45c30a715c0359a3be08fef42d5bb09e2b99029979692916"
+}
