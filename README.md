@@ -2,9 +2,9 @@
 
 A tiny browser renderer for shuffled bits of text without repeats.
 
-Give it quotes, facts, jokes, reminders, or any other tidbits. 
+Give it quotes, facts, jokes, reminders, or any other tidbits.
 
-It displays a different tidbit on each reload or navigation. Each tidbit is shown once before reshuffling and the sequence persists across page reloads and navigation (when `localStorage` is available). Without `localStorage`, the renderer still works, but tidbits may repeat. 
+It displays a different tidbit on each reload or navigation. Each tidbit is shown once before reshuffling and the sequence persists across page reloads and navigation (when `localStorage` is available). Without `localStorage`, the renderer still works, but tidbits may repeat.
 
 You can bring your own tidbits or start with the included collection of quotes.
 
@@ -149,6 +149,22 @@ Generated classes:
 random-tidbit
 random-tidbit__text
 random-tidbit__attribution
+```
+
+### Preventing layout shifts
+
+Reserve space for the target in CSS that loads with your page:
+
+```css
+#tidbit {
+  min-block-size: 3lh;
+}
+
+@media (max-width: 40rem) {
+  #tidbit {
+    min-block-size: 5lh;
+  }
+}
 ```
 
 ## Browser support
