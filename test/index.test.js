@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test, { afterEach } from 'node:test';
-import { quotes, renderRandomTidbit } from '../dist/index.js';
+import { renderRandomTidbit } from 'random-tidbit';
+import { quotes } from 'random-tidbit/quotes';
 import {
   createElement,
   createStorage,
