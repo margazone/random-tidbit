@@ -45,10 +45,8 @@ renderRandomTidbit({
 Quotes are included as one example of tidbits:
 
 ```ts
-import {
-  quotes,
-  renderRandomTidbit
-} from "random-tidbit";
+import { quotes } from "random-tidbit/quotes";
+import { renderRandomTidbit } from "random-tidbit";
 
 renderRandomTidbit({
   target: "#tidbit",

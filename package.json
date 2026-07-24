@@ -1,16 +1,28 @@
 {
   "name": "random-tidbit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A tiny browser renderer for shuffled bits of text without repeats.",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "quotes": [
+        "./dist/collections/index.d.ts"
+      ]
+    }
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./quotes": {
+      "types": "./dist/collections/index.d.ts",
+      "import": "./dist/collections/index.js",
+      "default": "./dist/collections/index.js"
     }
   },
   "files": [
